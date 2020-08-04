@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add typescript ts-node ts-node-dev --dev
+
+PATH: 
+  /home/nikan/.cargo/bin:/home/nikan/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: http://localhost:4873/typescript: no such package available
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1224:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "pronto-backend",
+    "version": "1.0.0",
+    "description": "pronto typescript backend",
+    "main": "src/index.ts",
+    "author": "Nikan Dalvand",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+      "@overnightjs/core": "^1.7.4",
+      "express": "^4.17.1"
+    },
+    "devDependencies": {
+      "@overnightjs/logger": "^1.1.12",
+      "@types/express": "^4.17.7",
+      "http-status-codes": "^1.4.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
